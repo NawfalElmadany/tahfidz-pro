@@ -27,16 +27,14 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose, activePage, onNaviga
         flex flex-col h-full shadow-2xl lg:shadow-none
       `}>
         {/* Logo */}
-        <div className="p-8 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-indigo-500 rounded-xl flex items-center justify-center shadow-lg">
-              <BookHeart className="text-white" size={24} />
-            </div>
-            <span className="text-2xl font-bold tracking-wide">TQA Madiun</span>
-          </div>
-          <button onClick={onClose} className="lg:hidden text-white/70 hover:text-white">
-            <X size={24} />
-          </button>
+        <div className="flex items-center gap-3 px-2">
+   {/* Pastikan file gambar sudah ada di folder public dengan nama logo-alirsyad.png */}
+<img 
+  src="/logo-alirsyad.png" 
+  alt="Logo TQA" 
+  className="h-10 w-auto object-contain" 
+/>
+   <span className="text-xl font-bold text-gray-800">TQA Madiun</span>
         </div>
 
         {/* Menu */}
