@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 
-function App() {
-  return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-      <h1 className="text-2xl font-bold">Aplikasi Tahfidz Pro</h1>
-      <p>Alhamdulillah, website berhasil berjalan!</p>
-    </div>
-  );
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error("Could not find root element to mount to");
 }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const root = ReactDOM.createRoot(rootElement);
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
