@@ -32,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose, activePage, onNaviga
             <div className="w-10 h-10 bg-indigo-500 rounded-xl flex items-center justify-center shadow-lg">
               <BookHeart className="text-white" size={24} />
             </div>
-            <span className="text-2xl font-bold tracking-wide">TahfidzPro</span>
+            <span className="text-2xl font-bold tracking-wide">TQA Madiun</span>
           </div>
           <button onClick={onClose} className="lg:hidden text-white/70 hover:text-white">
             <X size={24} />

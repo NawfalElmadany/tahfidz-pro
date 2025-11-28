@@ -71,7 +71,7 @@ const App: React.FC = () => {
            <div className="space-y-6">
              <div className="bg-indigo-900 text-white p-8 rounded-2xl shadow-lg mb-6">
                 <h2 className="text-3xl font-bold mb-2">Data Semua Santri</h2>
-                <p className="text-indigo-200">Kelola data lengkap santri TPQ TahfidzPro</p>
+                <p className="text-indigo-200">Kelola data lengkap santri TQA Madiun</p>
              </div>
              <StudentList students={students} onInputNilai={handleOpenModal} />
            </div>
